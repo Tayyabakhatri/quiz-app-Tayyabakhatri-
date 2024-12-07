@@ -35,11 +35,14 @@ h2{
     cursor: pointer;
     
 }
-.btns:hover{
+.btns:hover:not([disabled]){
     background-color: #67656a;
     color: white;
     transition: all 0.3sc;
     border: 1px solid white;
+}
+.btns:disabled{
+    cursor: no-drop;
 }
 #next-btn{
     padding: 5px 10px;
@@ -63,4 +66,10 @@ h2{
     justify-content: center;
 }
 
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
 
